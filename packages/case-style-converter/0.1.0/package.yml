@@ -1,0 +1,33 @@
+matches:
+  # Clipboard to lowercase
+  - trigger: ":toLower"
+    replace: "{{output}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: output
+        type: shell
+        params:
+          cmd: "echo -n \"{{clipboard}}\" | tr '[:upper:]' '[:lower:]'"
+  
+  # Clipboard to UPPER CASE
+  - trigger: ":toUpper"
+    replace: "{{output}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: output
+        type: shell
+        params:
+          cmd: "echo -n \"{{clipboard}}\" | tr '[:lower:]' '[:upper:]'"
+  
+  # Clipboard to Title Case
+  - trigger: ":toTitle"
+    replace: "{{output}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: output
+        type: shell
+        params:
+          cmd: "echo -n \"{{clipboard}}\" | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2));}1'"

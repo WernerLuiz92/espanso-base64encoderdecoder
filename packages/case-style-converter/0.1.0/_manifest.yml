@@ -1,0 +1,7 @@
+name: "case-style-converter"
+title: "Case Styles Converter"
+description: "Espanso package to convert case styles for example: camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dot.case, path/case, Sentence case, Title Case and more."
+version: 0.1.0
+author: Werner Gottschalt
+homepage: "https://github.com/WernerLuiz92/espanso-packages/packages/base64-encoder-decoder/0.1.0"
+tags: ["programming", "case", "styles", "camelCase", "PascalCase", "snake_case", "kebab-case", "CONSTANT_CASE", "dot.case", "path/case", "Sentence case", "Title Case"]
